@@ -42,3 +42,34 @@
     padding: 0.3rem 1rem;
     border-radius: 20px;
 }
+
+
+main {
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+}
+
+hr {
+    border: 1px solid #000000;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #000000;
+}

@@ -3,235 +3,237 @@
 <head>
     <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Manut.Prev.Aptos</title>
 </head>
 <body>
+    <main>
+        <p>
+            <center>
+                <!--Inserir uma imagem-->
+                <img src="Images/Logo-Thermas.png" alt="Logo Thermas" width="200">
+                <hr>
+                <!--Título de tamanho 1-->
+                <h1>Manutenção</h1>
+                <hr>
+                <h1>Formulário de Inspeção Preventiva Diária</h1>
+                <h1>Apartamentos</h1>
+                <hr>
+            </center>
+        </p>
 
-    <p>
-        <center>
-            <!--Inserir uma imagem-->
-            <img src="Images/Logo-Thermas.png" alt="Logo Thermas" width="200">
-            <hr>
-            <!--Título de tamanho 1-->
-            <h1>Manutenção</h1>
-            <hr>
-            <h1>Formulário de Inspeção Preventiva Diária</h1>
-            <h1>Apartamentos</h1>
-            <hr>
-        </center>
-    </p>
+        <!----> <!--como comentar-->
+        <!--Inserindo um link na página com a tag a de ancora-archor, com endereco e o texto a ser exibido -->
+        <a href="0-Manutencao-Thermas.html" target="_self">Voltar</a>
 
-    <!----> <!--como comentar-->
-    <!--Inserindo um link na página com a tag a de ancora-archor, com endereco e o texto a ser exibido -->
-    <a href="0-Manutencao-Thermas.html" target="_self">Voltar</a>
+        <h4>Equipamento Essencial para Inspeção</h4>
+        <ul>
+            <li>Multímetro</li>
+            <li>Kit de pilhas AAA</li>
+            <li>Kit de pilhas AA</li>
+            <li>Kit de pilhas C</li>
+            <li>Crivo do chuveiro</li>
+            <li>Filtro do ar condicionado</li>
+            <li>Bolsa de ferramentas padrão</li>
+        </ul>
+        <hr>
 
-    <h4>Equipamento Essencial para Inspeção</h4>
-    <ul>
-        <li>Multímetro</li>
-        <li>Kit de pilhas AAA</li>
-        <li>Kit de pilhas AA</li>
-        <li>Kit de pilhas C</li>
-        <li>Crivo do chuveiro</li>
-        <li>Filtro do ar condicionado</li>
-        <li>Bolsa de ferramentas padrão</li>
-    </ul>
-    <hr>
+        <h4>Orientações</h4>
+        <ul>
+            <li>Nas inspeções, sempre que precisar, fazer observações quanto à alguma anormalidade, correções realizadas, etc. </li>
+            <li>Ligar o frigobar no máximo e o ar condicionado em 18 °C e seguir com inspeção.</li>
+        </ul>
+        <p></p>
+        <hr>
 
-    <h4>Orientações</h4>
-    <ul>
-        <li>Nas inspeções, sempre que precisar, fazer observações quanto à alguma anormalidade, correções realizadas, etc. </li>
-        <li>Ligar o frigobar no máximo e o ar condicionado em 18 °C e seguir com inspeção.</li>
-    </ul>
-    <p></p>
-    <hr>
-
-    <form action="https://api.sheetmonkey.io/form/r1qzoZVq9BSPtrB5hoYP8J" method="post" enctype="multipart/form-data" lang="pt-BR">
-        
-        <h4>Identificação</h4>
-        <label for="">Nome do inspetor:</label>
-        <select name="nome" id="nome" required>
-            <option value="" disabled selected>Selecione uma opção</option>
-            <option value="Wigeny">Wigeny</option>
-            <option value="Adailson">Adailson</option>
-            <option value="Max">Max</option>
-        </select>
-        <br>
-        
-        <label for="">Data da inspeção:</label>
-        <input type="date" name="data-inspecao" id="data-inspecao" required>
-        <br>
-        <label for="">Apartamento:</label>
-        <input type="number" name="apartamento" id="apartamento" required>
-        <br>
-        <hr> 
-
-        <table>
-
-            <tr>
-                <td></td>
-                <td style="writing-mode: vertical-lr">Em bom estado</td>
-                <td style="writing-mode: vertical-lr">Correção realizada</td>
-                <td style="writing-mode: vertical-lr">Correção pendente</td>
-            </tr>
-            <tr>
-                <td>Porta Apto</td>
-                <td><input type="radio" id="porta-apto" value="Em bom estado" name="porta-apto" required></td>
-                <td><input type="radio" id="porta-apto" value="Correção realizada" name="porta-apto"></td>
-                <td><input type="radio" id="porta-apto" value="Correção pendente" name="porta-apto"></td>
-            </tr>
-
-            <tr>
-                <td>Maçanetas</td>
-                <td><input type="radio" id="macanetas" value="Em bom estado" name="macanetas" required></td>
-                <td><input type="radio" id="macanetas" value="Correção realizada" name="macanetas"></td>
-                <td><input type="radio" id="macanetas" value="Correção pendente" name="macanetas"></td>
-
-            <tr>
-                <td>Fechadura</td>
-                <td><input type="radio" id="Fechadura" value="Em bom estado" name="fechadura" required></td>
-                <td><input type="radio" id="Fechadura" value="Correção realizada" name="fechadura"></td>
-                <td><input type="radio" id="fechadura" value="Correção pendente" name="fechadura"></td>
-            </tr>
-
-            <tr>
-                <td>Batedores Porta</td>
-                <td><input type="radio" id="batedores-porta" value="Em bom estado" name="batedores-porta" required></td>
-                <td><input type="radio" id="batedores-porta" value="Correção realizada" name="batedores-porta"></td>
-                <td><input type="radio" id="batedores-porta" value="Correção pendente" name="batedores-porta"></td>
-            </tr>
-
-            <tr>
-                <td>Cofre</td>
-                <td><input type="radio" id="cofre" value="Em bom estado" name="cofre" required></td>
-                <td><input type="radio" id="cofre" value="Correção realizada" name="cofre"></td>
-                <td><input type="radio" id="cofre" value="Correção pendente" name="cofre"></td>
-            </tr>
-
-            <tr>
-                <td>Controle TV</td>
-                <td><input type="radio" id="controle-tv" value="Em bom estado" name="controle-tv" required></td>
-                <td><input type="radio" id="controle-tv" value="Correção realizada" name="controle-tv"></td>
-                <td><input type="radio" id="controle-tv" value="Correção pendente" name="controle-tv"></td>
-            </tr>
-
-            <tr>
-                <td>Controle AC</td>
-                <td><input type="radio" id="controle-ac" value="Em bom estado" name="controle-ac" required></td>
-                <td><input type="radio" id="controle-ac" value="Correção realizada" name="controle-ac"></td>
-                <td><input type="radio" id="controle-ac" value="Correção pendente" name="controle-ac"></td>
-            </tr>
-
-            <tr>
-                <td>Tomadas</td>
-                <td><input type="radio" id="tomadas" value="Em bom estado" name="tomadas" required></td>
-                <td><input type="radio" id="tomadas" value="Correção realizada" name="tomadas"></td>
-                <td><input type="radio" id="tomadas" value="Correção pendente" name="tomadas"></td>
-            </tr>
-
-            <tr>
-                <td>Interruptores</td>
-                <td><input type="radio" id="interruptores" value="Em bom estado" name="interruptores" required></td>
-                <td><input type="radio" id="interruptores" value="Correção realizada" name="interruptores"></td>
-                <td><input type="radio" id="interruptores" value="Correção pendente" name="interruptores"></td>
-            </tr>
-
-            <tr>
-                <td>Luminárias</td>
-                <td><input type="radio" id="luminarias" value="Em bom estado" name="luminarias" required></td>
-                <td><input type="radio" id="luminarias" value="Correção realizada" name="luminarias"></td>
-                <td><input type="radio" id="luminarias" value="Correção pendente" name="luminarias"></td>
-            </tr>
-
-            <tr>
-                <td>Frigobar</td>
-                <td><input type="radio" id="frigobar" value="Em bom estado" name="frigobar" required></td>
-                <td><input type="radio" id="frigobar" value="Correção realizada" name="frigobar"></td>
-                <td><input type="radio" id="frigobar" value="Correção pendente" name="frigobar"></td>
-            </tr>
-
-            <tr>
-                <td>Filtro AC</td>
-                <td><input type="radio" id="filtro-ac" value="Em bom estado" name="filtro-ac" required></td>
-                <td><input type="radio" id="filtro-ac" value="Correção realizada" name="filtro-ac"></td>
-                <td><input type="radio" id="filtro-ac" value="Correção pendente" name="filtro-ac"></td>
-            </tr>
-
-            <tr>
-                <td>Dreno AC</td>
-                <td><input type="radio" id="dreno-ac" value="Em bom estado" name="dreno-ac" required></td>
-                <td><input type="radio" id="dreno-ac" value="Correção realizada" name="dreno-ac"></td>
-                <td><input type="radio" id="dreno-ac" value="Correção pendente" name="dreno-ac"></td>
-            </tr>
-
-            <tr>
-                <td>Móveis</td>
-                <td><input type="radio" id="moveis" value="Em bom estado" name="moveis" required></td>
-                <td><input type="radio" id="moveis" value="Correção realizada" name="moveis"></td>
-                <td><input type="radio" id="moveis" value="Correção pendente" name="moveis"></td>
-            </tr>
+        <form action="https://api.sheetmonkey.io/form/r1qzoZVq9BSPtrB5hoYP8J" method="post" enctype="multipart/form-data" lang="pt-BR">
             
-            <tr>
-                <td>Painéis Madeira</td>
-                <td><input type="radio" id="paineis" value="Em bom estado" name="paineis" required></td>
-                <td><input type="radio" id="paineis" value="Correção realizada" name="paineis"></td>
-                <td><input type="radio" id="paineis" value="Correção pendente" name="paineis"></td>
-            </tr>
+            <h4>Identificação</h4>
+            <label for="">Nome do inspetor:</label>
+            <select name="nome" id="nome" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Wigeny">Wigeny</option>
+                <option value="Adailson">Adailson</option>
+                <option value="Max">Max</option>
+            </select>
+            <br>
+            
+            <label for="">Data da inspeção:</label>
+            <input type="date" name="data-inspecao" id="data-inspecao" required>
+            <br>
+            <label for="">Apartamento:</label>
+            <input type="number" name="apartamento" id="apartamento" required>
+            <br>
+            <hr> 
 
-            <tr>
-                <td>Pia / Torneira / Sifão</td>
-                <td><input type="radio" id="pia" value="Em bom estado" name="pia" required></td>
-                <td><input type="radio" id="pia" value="Correção realizada" name="pia"></td>
-                <td><input type="radio" id="pia" value="Correção pendente" name="pia"></td>
-            </tr>
+            <table>
 
-            <tr>
-                <td>Ducha Higiênica</td>
-                <td><input type="radio" id="ducha" value="Em bom estado" name="ducha" required></td>
-                <td><input type="radio" id="ducha" value="Correção realizada" name="ducha"></td>
-                <td><input type="radio" id="ducha" value="Correção pendente" name="ducha"></td>
-            </tr>
+                <tr>
+                    <td></td>
+                    <td style="writing-mode: vertical-lr">Em bom estado</td>
+                    <td style="writing-mode: vertical-lr">Correção realizada</td>
+                    <td style="writing-mode: vertical-lr">Correção pendente</td>
+                </tr>
+                <tr>
+                    <td>Porta Apto</td>
+                    <td><input type="radio" id="porta-apto" value="Em bom estado" name="porta-apto" required></td>
+                    <td><input type="radio" id="porta-apto" value="Correção realizada" name="porta-apto"></td>
+                    <td><input type="radio" id="porta-apto" value="Correção pendente" name="porta-apto"></td>
+                </tr>
 
-            <tr>
-                <td>Box - Porta</td>
-                <td><input type="radio" id="box-porta" value="Em bom estado" name="box-porta" required></td>
-                <td><input type="radio" id="box-porta" value="Correção realizada" name="box-porta"></td>
-                <td><input type="radio" id="box-porta" value="Correção pendente" name="box-porta"></td>
-            </tr>
+                <tr>
+                    <td>Maçanetas</td>
+                    <td><input type="radio" id="macanetas" value="Em bom estado" name="macanetas" required></td>
+                    <td><input type="radio" id="macanetas" value="Correção realizada" name="macanetas"></td>
+                    <td><input type="radio" id="macanetas" value="Correção pendente" name="macanetas"></td>
 
-            <tr>
-                <td>Box - Chuveiro</td>
-                <td><input type="radio" id="chuveiro" value="Em bom estado" name="chuveiro" required></td>
-                <td><input type="radio" id="chuveiro" value="Correção realizada" name="chuveiro"></td>
-                <td><input type="radio" id="chuveiro" value="Correção pendente" name="chuveiro"></td>
-            </tr>
+                <tr>
+                    <td>Fechadura</td>
+                    <td><input type="radio" id="Fechadura" value="Em bom estado" name="fechadura" required></td>
+                    <td><input type="radio" id="Fechadura" value="Correção realizada" name="fechadura"></td>
+                    <td><input type="radio" id="fechadura" value="Correção pendente" name="fechadura"></td>
+                </tr>
 
-            <tr>
-                <td>Box - Registro AQ</td>
-                <td><input type="radio" id="registro-aq" value="Em bom estado" name="registro-aq" required></td>
-                <td><input type="radio" id="registro-aq" value="Correção realizada" name="registro-aq"></td>
-                <td><input type="radio" id="registro-aq" value="Correção pendente" name="registro-aq"></td>
-            </tr>
+                <tr>
+                    <td>Batedores Porta</td>
+                    <td><input type="radio" id="batedores-porta" value="Em bom estado" name="batedores-porta" required></td>
+                    <td><input type="radio" id="batedores-porta" value="Correção realizada" name="batedores-porta"></td>
+                    <td><input type="radio" id="batedores-porta" value="Correção pendente" name="batedores-porta"></td>
+                </tr>
 
-            <tr>
-                <td>Box - Registro AF</td>
-                <td><input type="radio" id="registro-af" value="Em bom estado" name="registro-af" required></td>
-                <td><input type="radio" id="registro-af" value="Correção realizada" name="registro-af"></td>
-                <td><input type="radio" id="registro-af" value="Correção pendente" name="registro-af"></td>
-            </tr>
+                <tr>
+                    <td>Cofre</td>
+                    <td><input type="radio" id="cofre" value="Em bom estado" name="cofre" required></td>
+                    <td><input type="radio" id="cofre" value="Correção realizada" name="cofre"></td>
+                    <td><input type="radio" id="cofre" value="Correção pendente" name="cofre"></td>
+                </tr>
 
-            <tr>
-                <td>Box - Ralo</td>
-                <td><input type="radio" id="box-ralo" value="Em bom estado" name="box-ralo" required></td>
-                <td><input type="radio" id="box-ralo" value="Correção realizada" name="box-ralo"></td>
-                <td><input type="radio" id="box-ralo" value="Correção pendente" name="box-ralo"></td>
-            </tr>
-        </table>
-        <hr>
-        <label for="">Observações (quando houver):</label>
-        <input type="text" name="observacoes" id="observacoes"><br>
-        <hr>
+                <tr>
+                    <td>Controle TV</td>
+                    <td><input type="radio" id="controle-tv" value="Em bom estado" name="controle-tv" required></td>
+                    <td><input type="radio" id="controle-tv" value="Correção realizada" name="controle-tv"></td>
+                    <td><input type="radio" id="controle-tv" value="Correção pendente" name="controle-tv"></td>
+                </tr>
 
-        <button type="submit">Finalizar Inspeção</button>
+                <tr>
+                    <td>Controle AC</td>
+                    <td><input type="radio" id="controle-ac" value="Em bom estado" name="controle-ac" required></td>
+                    <td><input type="radio" id="controle-ac" value="Correção realizada" name="controle-ac"></td>
+                    <td><input type="radio" id="controle-ac" value="Correção pendente" name="controle-ac"></td>
+                </tr>
+
+                <tr>
+                    <td>Tomadas</td>
+                    <td><input type="radio" id="tomadas" value="Em bom estado" name="tomadas" required></td>
+                    <td><input type="radio" id="tomadas" value="Correção realizada" name="tomadas"></td>
+                    <td><input type="radio" id="tomadas" value="Correção pendente" name="tomadas"></td>
+                </tr>
+
+                <tr>
+                    <td>Interruptores</td>
+                    <td><input type="radio" id="interruptores" value="Em bom estado" name="interruptores" required></td>
+                    <td><input type="radio" id="interruptores" value="Correção realizada" name="interruptores"></td>
+                    <td><input type="radio" id="interruptores" value="Correção pendente" name="interruptores"></td>
+                </tr>
+
+                <tr>
+                    <td>Luminárias</td>
+                    <td><input type="radio" id="luminarias" value="Em bom estado" name="luminarias" required></td>
+                    <td><input type="radio" id="luminarias" value="Correção realizada" name="luminarias"></td>
+                    <td><input type="radio" id="luminarias" value="Correção pendente" name="luminarias"></td>
+                </tr>
+
+                <tr>
+                    <td>Frigobar</td>
+                    <td><input type="radio" id="frigobar" value="Em bom estado" name="frigobar" required></td>
+                    <td><input type="radio" id="frigobar" value="Correção realizada" name="frigobar"></td>
+                    <td><input type="radio" id="frigobar" value="Correção pendente" name="frigobar"></td>
+                </tr>
+
+                <tr>
+                    <td>Filtro AC</td>
+                    <td><input type="radio" id="filtro-ac" value="Em bom estado" name="filtro-ac" required></td>
+                    <td><input type="radio" id="filtro-ac" value="Correção realizada" name="filtro-ac"></td>
+                    <td><input type="radio" id="filtro-ac" value="Correção pendente" name="filtro-ac"></td>
+                </tr>
+
+                <tr>
+                    <td>Dreno AC</td>
+                    <td><input type="radio" id="dreno-ac" value="Em bom estado" name="dreno-ac" required></td>
+                    <td><input type="radio" id="dreno-ac" value="Correção realizada" name="dreno-ac"></td>
+                    <td><input type="radio" id="dreno-ac" value="Correção pendente" name="dreno-ac"></td>
+                </tr>
+
+                <tr>
+                    <td>Móveis</td>
+                    <td><input type="radio" id="moveis" value="Em bom estado" name="moveis" required></td>
+                    <td><input type="radio" id="moveis" value="Correção realizada" name="moveis"></td>
+                    <td><input type="radio" id="moveis" value="Correção pendente" name="moveis"></td>
+                </tr>
+                
+                <tr>
+                    <td>Painéis Madeira</td>
+                    <td><input type="radio" id="paineis" value="Em bom estado" name="paineis" required></td>
+                    <td><input type="radio" id="paineis" value="Correção realizada" name="paineis"></td>
+                    <td><input type="radio" id="paineis" value="Correção pendente" name="paineis"></td>
+                </tr>
+
+                <tr>
+                    <td>Pia / Torneira / Sifão</td>
+                    <td><input type="radio" id="pia" value="Em bom estado" name="pia" required></td>
+                    <td><input type="radio" id="pia" value="Correção realizada" name="pia"></td>
+                    <td><input type="radio" id="pia" value="Correção pendente" name="pia"></td>
+                </tr>
+
+                <tr>
+                    <td>Ducha Higiênica</td>
+                    <td><input type="radio" id="ducha" value="Em bom estado" name="ducha" required></td>
+                    <td><input type="radio" id="ducha" value="Correção realizada" name="ducha"></td>
+                    <td><input type="radio" id="ducha" value="Correção pendente" name="ducha"></td>
+                </tr>
+
+                <tr>
+                    <td>Box - Porta</td>
+                    <td><input type="radio" id="box-porta" value="Em bom estado" name="box-porta" required></td>
+                    <td><input type="radio" id="box-porta" value="Correção realizada" name="box-porta"></td>
+                    <td><input type="radio" id="box-porta" value="Correção pendente" name="box-porta"></td>
+                </tr>
+
+                <tr>
+                    <td>Box - Chuveiro</td>
+                    <td><input type="radio" id="chuveiro" value="Em bom estado" name="chuveiro" required></td>
+                    <td><input type="radio" id="chuveiro" value="Correção realizada" name="chuveiro"></td>
+                    <td><input type="radio" id="chuveiro" value="Correção pendente" name="chuveiro"></td>
+                </tr>
+
+                <tr>
+                    <td>Box - Registro AQ</td>
+                    <td><input type="radio" id="registro-aq" value="Em bom estado" name="registro-aq" required></td>
+                    <td><input type="radio" id="registro-aq" value="Correção realizada" name="registro-aq"></td>
+                    <td><input type="radio" id="registro-aq" value="Correção pendente" name="registro-aq"></td>
+                </tr>
+
+                <tr>
+                    <td>Box - Registro AF</td>
+                    <td><input type="radio" id="registro-af" value="Em bom estado" name="registro-af" required></td>
+                    <td><input type="radio" id="registro-af" value="Correção realizada" name="registro-af"></td>
+                    <td><input type="radio" id="registro-af" value="Correção pendente" name="registro-af"></td>
+                </tr>
+
+                <tr>
+                    <td>Box - Ralo</td>
+                    <td><input type="radio" id="box-ralo" value="Em bom estado" name="box-ralo" required></td>
+                    <td><input type="radio" id="box-ralo" value="Correção realizada" name="box-ralo"></td>
+                    <td><input type="radio" id="box-ralo" value="Correção pendente" name="box-ralo"></td>
+                </tr>
+            </table>
+            <hr>
+            <label for="">Observações (quando houver):</label>
+            <input type="text" name="observacoes" id="observacoes"><br>
+            <hr>
+
+            <button type="submit">Finalizar Inspeção</button>
+        </main>
     </form>
 </body>
 </html>

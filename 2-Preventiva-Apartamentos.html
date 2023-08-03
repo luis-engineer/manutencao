@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manut.Prev.Câmaras Frias</title>
+</head>
+<body>
+
+    <p>
+        <center>
+            <!--Inserir uma imagem-->
+            <img src="Images/Logo-Thermas.png" alt="Logo Thermas" width="200">
+            <hr>
+            <!--Título de tamanho 1-->
+            <h1>Manutenção</h1>
+            <hr>
+        </center>
+    </p>
+
+    <!----> <!--como comentar-->
+    <!--Inserindo um link na página com a tag a de ancora-archor, com endereco e o texto a ser exibido -->
+    <a href="0-Manutencao-Thermas.html" target="_self">Voltar</a>
+    
+
+    <h1>EM CONSTRUÇÃO</h1>
+    <h1>Formulário de Inspeção Preventiva Periódica Total</h1>
+    <h1>Apartamentos</h1>
+    <hr>
+    <h4>Equipamento Essencial para Inspeção</h4>
+    <ul>
+        <li>Multímetro</li>
+        <li>Kit de pilhas AAA</li>
+        <li>Kit de pilhas AA</li>
+        <li>Kit de pilhas C</li>
+        <li>Crivo do chuveiro</li>
+        <li>Filtro do ar condicionado</li>
+        <li>Bolsa de ferramentas padrão</li>
+    </ul>
+    <hr>
+
+    <form action="https://api.sheetmonkey.io/form/r1qzoZVq9BSPtrB5hoYP8J" method="post" enctype="multipart/form-data" lang="pt-BR">
+        <h4>Identificação</h4>
+        <label for="">Nome do inspetor:</label>
+        <input type="text" name="nome-inspetor" id="nome-inspetor" required>
+        <br>
+        
+        <label for="">Data da inspeção:</label>
+        <input type="date" name="data-inspecao" id="data-inspecao" required>
+        <br>
+        <label for="">Apartamento:</label>
+        <input type="number" name="apartamento" id="apartamento" required>
+        <br>
+        <hr>        
+
+        <h4>Orientação inicial</h4>
+        <ol>
+            <li>Na primeira inspeção, fazer observações sobre a quantidade e o modelo de cada aparelho (especificação), luminárias (tamanho, formato, cor, paflon ou led), tomadas (simples, dupla, 10A, 20A, etc), interruptores, etc.</li>
+            <li>Nas inspeções, sempre que precisar, fazer observações quanto à alguma anormalidade, correções realizadas, etc. </li>
+            <li>Ligar o frigobar no máximo e o ar condicionado em 18 °C e seguir com inspeção.</li>
+        </ol>
+        <p></p>
+        <hr>
+
+        <!---->
+        <h4>Maçanetas</h4>
+        <label for="">Correções?</label>
+        <select name="macanetas-correcao" id="macanetas-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="macanetas-obs" id="macanetas-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Batedor da porta</h4>
+        <label for="">Correções?</label>
+        <select name="porta-batedor-correcao" id="porta-batedor-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="porta-batedor-obs" id="porta-batedor-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Fechadura</h4>
+        <!--Substituir por uma imagem do cofre com a indicação numérica das pilhas-->
+        <img src="Images/condensadora-limpo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Limpa" height="150">
+        <br>
+        <label for="">Está funcionando ?</label>
+        <select name="fechadura-funcionamento" id="fechadura-funcionamento" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <label for="">Tensão elétrica da Pilha 1 (V):</label>
+        <input type="number" name="fechadura-tensao-pilha-1" id="fechadura-tensao-pilha-1" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Tensão elétrica da Pilha 2 (V):</label>
+        <input type="number" name="fechadura-tensao-pilha-2" id="fechadura-tensao-pilha-2" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Tensão elétrica da Pilha 3 (V):</label>
+        <input type="number" name="fechadura-tensao-pilha-3" id="fechadura-tensao-pilha-3" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Tensão elétrica da Pilha 4 (V):</label>
+        <input type="number" name="fechadura-tensao-pilha-4" id="fechadura-tensao-pilha-4" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Orientação: trocar a pilha quando a tensão elétrica for igual a SEM HISTÓRICO AINDA</label>
+        <br>
+        <label for="">Quantas pilhas foram trocadas:</label>
+        <select name="fechadura-troca-pilha" id="fechadura-troca-pilha" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="0">Nenhuma</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="fechadura-obs" id="ofechadura-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Cofre</h4>
+        <!--Substituir por uma imagem do cofre com a indicação numérica das pilhas-->
+        <img src="Images/condensadora-limpo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Limpa" height="150">
+        <br>
+        <label for="">Está funcionando ?</label>
+        <select name="cofre-funcionando" id="cofre-funcionando" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <label for="">Tensão elétrica da Pilha 1 (V):</label>
+        <input type="number" name="cofre-tensao-pilha-1" id="cofre-tensao-pilha-1" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Tensão elétrica da Pilha 2 (V):</label>
+        <input type="number" name="cofre-tensao-pilha-2" id="cofre-tensao-pilha-2" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Tensão elétrica da Pilha 3 (V):</label>
+        <input type="number" name="cofre-tensao-pilha-3" id="cofre-tensao-pilha-3" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Tensão elétrica da Pilha 4 (V):</label>
+        <input type="number" name="cofre-tensao-pilha-4" id="cofre-tensao-pilha-4" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Orientação: trocar a pilha quando a tensão elétrica for igual a 1,44V</label>
+        <br>
+        <label for="">Quantas pilhas foram trocadas:</label>
+        <select name="cofre-troca-pilha" id="cofre-troca-pilha" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="0">Nenhuma</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="cofre-obs" id="cofre-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Controle da TV</h4>
+        <!--Substituir por uma imagem do controle da TV com a indicação numérica das pilhas-->
+        <img src="Images/condensadora-limpo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Limpa" height="150">
+        <br>
+        <label for="">Está funcionando ?</label>
+        <select name="controle-tv-funcionamento" id="controle-tv-funcionamento" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <label for="">Tensão elétrica da Pilha 1 (V):</label>
+        <input type="number" name="controle-tv-tensao-pilha-1" id="controle-tv-tensao-pilha-1" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Tensão elétrica da Pilha 2 (V):</label>
+        <input type="number" name="controle-tv-tensao-pilha-2" id="controle-tv-tensao-pilha-2" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Orientação: trocar a pilha quando a tensão elétrica for igual a SEM HISTÓRICO AINDA</label>
+        <br>
+        <label for="">Quantas pilhas foram trocadas:</label>
+        <select name="controle-tv-troca-pilha" id="controle-tv-troca-pilha" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="0">Nenhuma</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="controle-tv-obs" id="controle-tv-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Controle do ar condicionado</h4>
+        <!--Substituir por uma imagem do controle do AC com a indicação numérica das pilhas-->
+        <img src="Images/condensadora-limpo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Limpa" height="150">
+        <br>
+        <label for="">Está funcionando ?</label>
+        <select name="ac-controle-funcionamento" id="ac-controle-funcionamento" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <label for="">Tensão elétrica da Pilha 1 (V):</label>
+        <input type="number" name="ac-controle-tensao-pilha-1" id="ac-controle-tensao-pilha-1" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Tensão elétrica da Pilha 2 (V):</label>
+        <input type="number" name="ac-controle-tensao-pilha-2" id="ac-controle-tensao-pilha-2" required step="0.01" min="0" max="1.50">
+        <br>
+        <label for="">Orientação: trocar a pilha quando a tensão elétrica for igual a SEM HISTÓRICO AINDA</label>
+        <br>
+        <label for="">Quantas pilhas que foram trocadas:</label>
+        <select name="ac-controle-troca-pilha" id="ac-controle-troca-pilha" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="0">Nenhuma</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="ac-controle-obs" id="ac-controle-fechadura-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Tomadas</h4>
+        <label for="">Tensão elétrica das tomadas (~ 220V) e qnt. de correções:</label>
+        <select name="tomada-tensao" id="tomada-tensao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Tensão elétrica funcional">Tensão elétrica funcional</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="tomada-tensao-correcao" id="tomada-tensao-correcao" required step="1" min="0" max="15">
+        <br>
+
+        <label for="">Estado dos Espelhos e qnt. de trocas:</label>
+        <select name="tomada-espelhos-estado" id="tomada-espelhos-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="tomada-espelhos-troca" id="tomada-espelhos-troca" required step="1" min="0" max="15">
+        <br>
+
+        <label for="">Estado dos módulos e qnt. de trocas:</label>
+        <select name="tomada-modulos" id="tomada-modulos" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="tomada-modulos-troca" id="tomada-modulos-troca" required step="1" min="0" max="15">
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="tomadas-obs" id="tomadas-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Interruptores</h4>
+        <label for="">Funcionando?</label>
+        <select name="interruptor-funcional" id="interruptor-funcional" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+
+        <label for="">Estado dos espelhos e qnt. de trocas:</label>
+        <select name="interruptor-espelhos-estado" id="interruptor-espelhos-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="interruptor-espelhos-troca" id="interruptor-espelhos-troca" required step="1" min="0" max="15">
+        <br>
+
+        <label for="">Estado dos módulos e qnt. de trocas:</label>
+        <select name="interruptor-modulos" id="interruptor-modulos" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="interruptor-modulos-troca" id="interruptor-modulos-troca" required step="1" min="0" max="15">
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="interruptores-obs" id="interruptores-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Luminárias</h4>
+        <label for="">Funcionando?</label>
+        <select name="luminarias-funcional" id="interruptor-funcional" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <label for="">Estado visual e troca:</label>
+        <select name="luminarias-estado" id="luminarias-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="luminarias-troca" id="luminarias-troca" required step="1" min="0" max="15">
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="luminarias-obs" id="luminarias-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Frigobar</h4>
+        <label for="">Está funcionando ?</label>
+        <select name="frigobar-funcionando" id="frigobar-funcionando" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <label for="">Estado e temperatura (°C):</label>
+        <select name="frigobar-correcao" id="frigobar-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="frigobar-temperatura" id="frigobar-temperatura" required step="0.1" min="-25" max="100">
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="frigobar-obs" id="frigobar-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Ar Condicionado</h4>
+        <ul>
+            <li>Evaporadora (Lado Interno - Frio)</li>
+        </ul>
+        <label for="">Funcionando?</label>
+        <select name="ac-evaporador-funcionando" id="ac-evaporador-funcionando" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+
+        <label for="">Estado externo do aparelho:</label>
+        <select name="ac-evaporador-correcao" id="ac-evaporador-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Temperatura (°C):</label>
+        <input type="number" name="ac-evaporador-temperatura" id="ac-evaporador-temperatura">
+        <br>
+
+        <label for="">Estado e correção do filtro:</label>
+        <select name="ac-evaporador-limpeza-estado-visual" id="ac-evaporador-estado-visual" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="pouco-sujo">Pouco sujo</option>
+            <option value="limpo">Limpo</option>
+            <option value="sujo">Sujo</option>
+
+        </select>
+        <select name="ac-evaporador-limpeza-realizacao" id="ac-evaporador-limpeza-realizacao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Congelando?</label>
+        <select name="ac-evaporador-congelando" id="ac-evaporador-congelando" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <label for="">Estado e lavagem das serpentinas:</label>
+        <select name="ac-evaporador-lavagem-estado-visual" id="ac-evaporador-lavagem-estado-visual" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="pouco-sujo">Pouco sujo</option>
+            <option value="sujo">Sujo</option>
+            <option value="limpo">Limpo</option>
+        </select>
+        <select name="ac-evaporador-lavagem-realizacao" id="ac-evaporador-lavagem-realizacao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="nao-feita">Não Feita</option>
+            <option value="feita">Feita</option>
+        </select>
+        <br>
+
+        <label for="">Vazamento e limpeza do dreno:</label>
+        <select name="ac-evaporador-dreno-infiltracao" id="ac-evaporador-dreno-infiltracao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Não">Não</option>
+            <option value="Sim">Sim</option>
+        </select>
+        <select name="ac-evaporador-dreno-limpeza" id="ac-evaporador-dreno" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="ac-evaporador-obs" id="ac-evaporador-obs">
+        <br>
+
+        <ul>
+            <li>Condensadora (Lado externo - Quente)</li>
+        </ul>
+        <label for="">Funcionando?</label>
+        <select name="ac-condensador-funcionando" id="ac-condensador-funcionando" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        
+        <label for="">Estado externo do aparelho:</label>
+        <select name="ac-condensador-correcao" id="ac-condensador-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Temperatura (°C):</label>
+        <input type="number" name="ac-condensador-temperatura" id="ac-condensador-temperatura">
+        <br>
+        <label for="">Congelando?</label>
+        <select name="ac-condensador-congelando" id="ac-condensador-congelando" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <label for="">Estado e lavagem das serpentinas:</label>
+        <select name="ac-condensador-lavagem-estado-visual" id="ac-condensador-lavagem-estado-visual" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="pouco-sujo">Pouco sujo</option>
+            <option value="sujo">Sujo</option>
+            <option value="limpo">Limpo</option>
+        </select>
+        <select name="ac-condensador-lavagem-realizacao" id="ac-condensador-lavagem-realizacao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="nao-feita">Não Feita</option>
+            <option value="feita">Feita</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="ac-condensador-obs" id="ac-condensador-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Móveis</h4>
+        <label for="">Estado do móveis e quantidade de reparos:</label>
+        <select name="moveis-estado" id="moveis-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="moveis-estado-qnt-reparos" id="moveis-estado-qnt-reparos" required step="1" min="0" max="15">
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="moveis-obs" id="moveis-obs">
+        <br>
+        <hr>
+
+        <h4>Painéis madeirados</h4>
+        <label for="">Estado dos painés e quantidade de reparos:</label>
+        <select name="paineis-estado" id="paineis-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <input type="number" name="paineis-estado-qnt-reparos" id="paineis-estado-qnt-reparos" required step="1" min="0" max="15">
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="paineis-obs" id="paineis-obs">
+        <br>
+        <hr>
+
+        <h4>Pia</h4>
+        <label for="">Torneira:</label>
+        <select name="pia-torneira-estado" id="pia-torneira-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Sifão</label>
+        <select name="pia-sifao-estado" id="pia-sifao-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        
+
+        <label for="">Cuba</label>
+        <select name="pia-cuba-estado" id="pia-cuba-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Válvula (Ralo)</label>
+        <select name="pia-ralo-estado" id="pia-ralo-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="pia-obs" id="pia-obs">
+        <br>
+        <hr>
+
+        <h4>Ducha higiênica</h4>
+        <label for="">Torneira:</label>
+        <select name="ducha-torneira-estado" id="ducha-torneira-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Vazando">Vazando</option>
+            <option value="Quebrada">Quebrada</option>
+        </select>
+        <select name="ducha-torneira-correcao" id="ducha-torneira-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Chicote</label>
+        <select name="ducha-chicote-estado" id="ducha-chicote-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Vazando">Vazando</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="ducha-chicote-correcao" id="ducha-chicote-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Clivo espalhador</label>
+        <select name="ducha-espalhador-estado" id="ducha-espalhador-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Espalhamento irregular">Espalhamento irregular</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="ducha-espalhador-correcao" id="ducha-espalhador-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Gatilho</label>
+        <select name="ducha-gatilho-estado" id="ducha-gatilho-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Desfuncional">Desfuncional</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="ducha-gatilho-correcao" id="ducha-gatilho-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        
+        <label for="">Observações:</label>
+        <input type="text" name="pia-obs" id="pia-obs">
+        <br>
+        <hr>
+
+        <!---->
+        <h4>Vaso sanitário</h4>
+        <label for="">Botão de acionamento:</label>
+        <select name="vaso-descarga-acionamento-estado" id="vaso-descarga-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Travado">Travado</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="vaso-descarga-acionamento-correcao" id="vaso-descarga-acionamento-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Kit interno da descarga:</label>
+        <select name="vaso-descarga-kit-estado" id="vaso-kit-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Corrente solta">Corrente solta</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="vaso-descarga-kit-correcao" id="vaso-descarga-kit-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Entupimento:</label>
+        <select name="vaso-entupimento-estado" id="vaso-entupimento-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Entupido">Entupido</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="vaso-entupimento-correcao" id="vaso-entupimento-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Assento sanitário:</label>
+        <select name="vaso-assento-estado" id="vaso-assento-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Solto">Solto</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="vaso-assento-correcao" id="vaso-assento-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Anel de vedação do sanitário:</label>
+        <select name="vaso-anel-estado" id="vaso-anel-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Vazando">Vazando</option>
+        </select>
+        <select name="vaso-anel-correcao" id="vaso-anel-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="vaso-obs" id="vaso-obs">
+        <br>
+        <hr>
+        
+        <!---->
+        <h4>Box do banheiro</h4>
+        <label for="">Roldanas da porta:</label>
+        <select name="box-porta-roldana-estado" id="box-porta-roldana-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Travando">Travando</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="box-porta-roldana-correcao" id="box-porta-roldana-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <select name="box-porta-roldana-trocas" id="box-porta-roldana-trocas" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="0">Nenhuma</option>
+            <option value="1">1 troca</option>
+            <option value="2">2 trocas</option>
+        </select>
+        <br>
+
+        <label for="">Trilhos da porta:</label>
+        <select name="box-porta-trilhos-estado" id="box-porta-trilhos-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Travando">Travando</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="box-porta-roldana-correcao" id="box-porta-roldana-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Registro de água quente:</label>
+        <select name="box-registro-aq-estado" id="box-registro-aq-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Vazando">Vazando</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="box-registro-aq-correcao" id="box-registro-aq-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Registro de água fria:</label>
+        <select name="box-registro-af-estado" id="box-registro-af-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Vazando">Vazando</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="box-registro-af-correcao" id="box-registro-af-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Crivo espalhador do chuveiro:</label>
+        <select name="box-clivo-estado" id="box-clivo-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Espalhamento irregular">Espalhamento irregular</option>
+            <option value="Quebrado">Quebrado</option>
+        </select>
+        <select name="box-clivo-correcao" id="box-clivo-correcao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+
+        <label for="">Ralo</label>
+        <select name="box-ralo-estado" id="box-ralo-estado" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Sem correção">Sem correção</option>
+            <option value="Correção realizada">Correção realizada</option>
+            <option value="Correção pendente">Correção pendente</option>
+        </select>
+        <br>
+        <label for="">Observações:</label>
+        <input type="text" name="box-obs" id="box-obs">
+        <br>
+        <hr>
+        <!--
+        <button type="submit">Finalizar Inspeção</button>
+        -->
+    </form>
+</body>
+</html>

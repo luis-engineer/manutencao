@@ -29,16 +29,24 @@
         <h1>Formulário de Inspeção Preventiva</h1>
         <h1>Câmaras Frias</h1>
         <hr>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="https://api.sheetmonkey.io/form/369zeTbr3y1SZwaPbjP1r8" method="post" enctype="multipart/form-data">
 
-            <label for="">Nome Completo do Inspetor:</label>
-            <input type="text" name="nome-inspetor" id="nome-inspetor" required>
+            <h4>Orientações</h4>
+            <ul>
+                <li>Nas inspeções, sempre que precisar, fazer observações quanto à alguma anormalidade, correções realizadas, etc. </li>
+                <li>Quando for realizar a lavagem, preencher esse formulário de inspeção duas vezes: 1)antes e 2)depois da lavagem</li>
+            </ul>
+            <hr>
+
+            <h4>Identificação</h4>
+            <label for="">Nome do inspetor:</label>
+            <select name="nome-inspetor" id="nome-inspetor" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Jeferson">Jeferson</option>
+            </select>
             <br>
-            
-            <label for="">Data da Inspeção:</label>
-            <input type="date" name="data-inspecao" id="data-inspecao" required>
-            <br>
-            <label for="">Câmara Fria:</label>
+
+            <label for="">N° da câmara fria:</label>
             <select name="id-camara-fria" id="id-camara-fria" required>
                 <option value="" disabled selected>Selecione uma opção</option>
                 <option value="1">1</option>
@@ -48,9 +56,14 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
             </select>
-
+            <br>
+            
+            <label for="">Data da inspeção:&nbsp;</label>
+            <input type="date" name="data-inspecao" id="data-inspecao" required>            
+            <br>
 
             <hr>
+
             <h3>Lado da Unidade Condensadora (Quente)</h3>
             <p>Imagens de Referência</p>
 
@@ -62,24 +75,23 @@
             <label for="">Suja</label><br>
             <img src="Images/condensadora-sujo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Suja" height="150">
             <img src="Images/condensadora-sujo-camaras-2.jpg" alt="Traseira(Ventilador) da Condensadora Suja" height="150">
-            <br>
+            <br><br>
 
-            <label for="">Estado e Realização da Limpeza:</label>
-            <select name="limpeza-condensador-estado-visual" id="limpeza-condensador-estado-visual" required>
+            <label for="">Estado e realização da lavagem:</label><br>
+            <select name="cond-lavagem-estado" id="cond-limpeza-estado" required>
                 <option value="" disabled selected>Selecione uma opção</option>
                 <option value="pouco-sujo">Pouco sujo</option>
                 <option value="sujo">Sujo</option>
                 <option value="limpo">Limpo</option>
             </select>
-
-
-            <select name="limpeza-condensador-realizacao" id="limpeza-condensador-realizacao" required>
+            <select name="cond-lavagem-realizacao" id="cond-lavagem-realizacao" required>
                 <option value="" disabled selected>Selecione uma opção</option>
                 <option value="nao-feita">Não Feita</option>
                 <option value="feita">Feita</option>
             </select>
-            <br>
+            <br><br>
 
+            <!--
             <label for="">Anexar foto do estado de limpeza frontal (Tela)</label>
             <input type="file" name="imagem-da-limpeza-tela-condensadora" id="imagem-da-limpeza-tela-condensadora" accept="image/jpeg,image/png" required>
             <br>
@@ -87,51 +99,108 @@
             <label for="">Anexar foto do estado de limpeza traseira (Ventilador)</label>
             <input type="file" name="imagem-da-limpeza-ventilador-condensadora" id="imagem-da-limpeza-ventilador-condensadora" accept="image/jpeg,image/png" required>
             <br>
-
-            <label for="">Temperatura do Ar da Condensadora (°C):</label>
-            <input type="number" name="temperatura-condensadora" id="temperatura-condensadora" required>
-            <br>
-
-            <label for="">Velocidade do Ar da Condensadora (m/s):</label>
-            <input type="number" name="velocidade-ar-condensadora" id="temperatura-condensadora" required>
-            <br>
-
-            <label for="">Pressão da linha de alta - Quente (Psi):</label>
-            <input type="number" name="pressao-alta" id="pressao-alta" required>
-            <br>
-
-            <label for="">Pressão da linha de baixa - Frio (Psi):</label>
-            <input type="number" name="pressao-baixa" id="pressao-baixa" required>
-            <br>
-
-            <label for="">Capacitância do capacitor (&mu;F):</label>
-            <input type="number" name="capacitancia" id="capacitancia" required>
-            <br>
-
-            <label for="">Corrente Elétrica do Compressor (A):</label>
-            <input type="number" name="corrente-compressor" id="pressao-baixa" required>
-            <br>
-
-            <label for="">Tensão Elétrica do Compressor (V):</label>
-            <input type="number" name="tensao-compressor" id="tensão-compressor" required>
-            <br>
-
-            <!--
-            <label for="">Endereço:</label>
-            <input type="text" name="endereco" id="endereco">
-            <br>
-
-            <label for="">Fone:</label>
-            <input type="tel" name="fone" id="fone" pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}" placeholder="XX XXXXX-XXXX" required>
-            <br>
-
-            <br>
-            
             -->
+
+            <label for="">Temperatura do ar da condensadora (°C):</label><br>
+            <input type="number" name="cond-temp-ar" id="cond-temp-ar" required step="0.01" min="0">
+            <br><br>
+
+
+            <label for="">Velocidade do ar da Condensadora (m/s):</label><br>
+            <input type="number" name="cond-vel-ar" id="cond-vel-ar" required step="0.01" min="0">
+            <br><br>
+
+            <label for="">Pressão da linha de alta - Quente (Psi):</label><br>
+            <input type="number" name="cond-pressao-alta" id="cond-pressao-alta" required step="0.01" min="0">
+            <br><br>
+
+            <label for="">Pressão da linha de baixa - Frio (Psi):</label><br>
+            <input type="number" name="cond-pressao-baixa" id="cond-pressao-baixa" required step="0.01" min="0">
+            <br><br>
+
+            <label for="">Capacitância do capacitor (&mu;F):</label><br>
+            <input type="number" name="cond-capacitor" id="cond-capacitor" required step="0.01" min="0">
+            <br><br>
+
+            <label for="">Corrente Elétrica do Compressor (A):</label><br>
+            <input type="number" name="cond-compressor-corrente" id="cond-compressor-corrente" required step="0.01" min="0">
+            <br><br>
+
+            <label for="">Tensão Elétrica do Compressor (V):</label><br>
+            <input type="number" name="cond-compressor-tensao" id="cond-compressor-tensao" required step="0.01" min="0">
+            <br><br>
+
             <hr>
-            <!--
+            
+            <h3>Lado da Unidade Evaporadora (Frio)</h3>
+            <p>Imagens de Referência</p>
+
+            <!--Inserir uma imagem-->
+            <label for="">Limpa</label><br>
+            <img src="Images/condensadora-limpo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Limpa" height="150">
+            <img src="Images/condensadora-limpo-camaras-2.jpg" alt="Traseira(Ventilador) da Condensadora Limpa" height="150">
+            <br><br>
+            <label for="">Suja</label><br>
+            <img src="Images/condensadora-sujo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Suja" height="150">
+            <img src="Images/condensadora-sujo-camaras-2.jpg" alt="Traseira(Ventilador) da Condensadora Suja" height="150">
+            <br><br>
+
+            <label for="">Velocidade do ar - ventilador esquerdo (m/s):</label><br>
+            <input type="number" name="evap-vel-ar-esq" id="evap-vel-ar-esq" required step="0.01" min="0">
+            <br><br>
+
+            <label for="">Velocidade do ar - ventilador direito (m/s):</label><br>
+            <input type="number" name="evap-vel-ar-dir" id="evap-vel-ar-di" required step="0.01" min="0">
+            <br><br>
+
+            <label for="">Temperatura do ar - ventilador esquerdo (°C):</label><br>
+            <input type="number" name="evap-temp-ar-esq" id="evap-temp-ar-esq" required step="0.01" min="-20">
+            <br><br>
+
+            <label for="">Temperatura do ar - ventilador direito (°C):</label><br>
+            <input type="number" name="evap-temp-ar-dir" id="evap-temp-ar-dir" required step="0.01" min="-20">
+            <br><br>
+
+            <label for="">Limpeza do filtro:</label><br>
+            <select name="evap-filtro" id="evap-filtro" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Em bom estado">Em bom estado</option>
+                <option value="Correção realizada">Correção realizada</option>
+                <option value="Correção pendente">Correção pendente</option>
+            </select>
+            <br><br>
+
+            <label for="">Limpeza do dreno:</label><br>
+            <select name="evap-dreno" id="evap-dreno" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Em bom estado">Em bom estado</option>
+                <option value="Correção realizada">Correção realizada</option>
+                <option value="Correção pendente">Correção pendente</option>
+            </select>
+            <br><br>
+
+            <label for="">Estado e realização da lavagem:</label><br>
+            <select name="evap-lavagem-estado" id="evap-limpeza-estado" required step="0.01" min="0">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="pouco-sujo">Pouco sujo</option>
+                <option value="sujo">Sujo</option>
+                <option value="limpo">Limpo</option>
+            </select>
+            <select name="evap-lavagem-realizacao" id="evap-lavagem-realizacao" required step="0.01" min="0">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="nao-feita">Não Feita</option>
+                <option value="feita">Feita</option>
+            </select>
+            <br><br>
+
+            <hr>
+            <label for="">Observações (quando houver):</label>
+            <input type="text" name="observacoes" id="observacoes"><br>
+
+            <hr>
+            
+
             <button type="submit">Finalizar Inspeção</button>
-            -->
 
     </form>
 </body>

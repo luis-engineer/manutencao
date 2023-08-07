@@ -105,7 +105,6 @@
             <input type="number" name="cond-temp-ar" id="cond-temp-ar" required step="0.01" min="0">
             <br><br>
 
-
             <label for="">Velocidade do ar da Condensadora (m/s):</label><br>
             <input type="number" name="cond-vel-ar" id="cond-vel-ar" required step="0.01" min="0">
             <br><br>
@@ -116,6 +115,15 @@
 
             <label for="">Pressão da linha de baixa - Frio (Psi):</label><br>
             <input type="number" name="cond-pressao-baixa" id="cond-pressao-baixa" required step="0.01" min="0">
+            <br><br>
+
+            <label for="">Limpeza do filtro secador:</label><br>
+            <select name="evap-filtro" id="evap-filtro" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Em bom estado">Em bom estado</option>
+                <option value="Correção realizada">Correção realizada</option>
+                <option value="Correção pendente">Correção pendente</option>
+            </select>
             <br><br>
 
             <label for="">Capacitância do capacitor (&mu;F):</label><br>
@@ -159,15 +167,6 @@
 
             <label for="">Temperatura do ar - ventilador direito (°C):</label><br>
             <input type="number" name="evap-temp-ar-dir" id="evap-temp-ar-dir" required step="0.01" min="-20">
-            <br><br>
-
-            <label for="">Limpeza do filtro:</label><br>
-            <select name="evap-filtro" id="evap-filtro" required>
-                <option value="" disabled selected>Selecione uma opção</option>
-                <option value="Em bom estado">Em bom estado</option>
-                <option value="Correção realizada">Correção realizada</option>
-                <option value="Correção pendente">Correção pendente</option>
-            </select>
             <br><br>
 
             <label for="">Limpeza do dreno:</label><br>

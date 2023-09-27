@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manut-prev-ar-cond</title>
+</head>
+<body>
+    
+
+    <p>
+        <center>
+            <!--Inserir uma imagem-->
+            <img src="Images/Logo-Thermas.png" alt="Logo Thermas" width="200">
+            <hr>
+            <!--Título de tamanho 1-->
+            <h1>Manutenção</h1>
+            <hr>
+        </center>
+    </p>
+
+    <!----> <!--como comentar-->
+    <!--Inserindo um link na página com a tag a de ancora-archor, com endereco e o texto a ser exibido -->
+    <a href="0-Manutencao-Thermas.html" target="_self">Voltar</a>
+    
+
+    <h1>Formulário de Inspeção Preventiva</h1>
+    <h1>Ar Condicionado</h1>
+    <hr>
+    <form action="https://api.sheetmonkey.io/form/28LBGA3xDdkTEu7zC2w1kA" method="post" enctype="multipart/form-data">
+
+        <h4>Orientações</h4>
+        <ul>
+            <li>Ligar o AC e pôr em 20 °C para a inspeção.</li>
+            <li>Nas inspeções, sempre que houver, fazer observações quanto à alguma anormalidade, correções realizadas, etc. </li>
+        </ul>
+        <hr>
+
+        <h4>Identificação</h4>
+        <label for="">Nome do inspetor:</label><br>
+        <select name="nome-inspetor" id="nome-inspetor" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Jeferson">Jeferson</option>
+        </select>
+        <br><br>
+
+        <label for="">Localização do AC:</label><br>
+        <input type="text" name="localizacao-ac" id="localizacao-ac" required>
+        <br><br>
+
+        <label for="">Potência do AC (BTU/h):</label><br>
+        <input type="number" name="potencia" id="potencia" step="500" min="0" required> 
+        <br><br>
+
+        <label for="">Tipo:</label><br>
+        <select name="tipo" id="tipo" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Janela">Janela</option>
+            <option value="Split convencional">Split convencional</option>
+            <option value="Split inverter">Split inverter</option>
+            <option value="Hi-wall">Hi-wall</option>
+            <option value="Piso teto">Piso teto</option>
+        </select>
+        <br><br>
+
+        <label for="">Gás:</label><br>
+        <input type="text" name="gas" id="tipo" required>
+        <br><br>
+
+        <label for="">Número de Identificação (Se não houver, pôr -1):</label><br>
+        <input type="number" name="num_ident" id="num_ident" step="1" min="-1" required> 
+        <br><br>
+
+        <label for="">Data da inspeção:</label><br>
+        <input type="date" name="data-inspecao" id="data-inspecao" required>            
+        <br><br>
+
+        <hr>
+
+        <h3>Lado da Unidade Evaporadora (Frio)</h3>
+
+        <label for="">Velocidade do ar - lado esquerdo (m/s):</label><br>
+        <input type="number" name="evap-vel-ar-esq" id="evap-vel-ar-esq" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Velocidade do ar - lado direito (m/s):</label><br>
+        <input type="number" name="evap-vel-ar-dir" id="evap-vel-ar-dir" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Temperatura do ar - lado esquerdo (°C):</label><br>
+        <input type="number" name="evap-temp-ar-esq" id="evap-temp-ar-esq" required step="0.01" min="-20">
+        <br><br>
+
+        <label for="">Temperatura do ar - lado direito (°C):</label><br>
+        <input type="number" name="evap-temp-ar-dir" id="evap-temp-ar-dir" required step="0.01" min="-20">
+        <br><br>
+
+        <label for="">Limpeza da tela do filtro:</label><br>
+        <select name="evap-filtro" id="evap-filtro" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Limpeza realizada">Limpeza realizada</option>
+        </select>
+        <br><br>
+
+        <label for="">Limpeza do dreno:</label><br>
+        <select name="evap-dreno" id="evap-dreno" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Limpeza realizada">Limpeza realizada</option>
+        </select>
+        <br><br>
+
+        <label for="">Limpeza da bandeja de drenagem:</label><br>
+        <select name="evap-band-dreno" id="evap-band-dreno" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Limpeza realizada">Limpeza realizada</option>
+        </select>
+        <br><br>
+
+        <label for="">Realização da lavagem:</label><br>
+        <select name="evap-lavagem" id="evap-lavagem" required step="0.01" min="0">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="nao-feita">Não Feita</option>
+            <option value="feita">Feita</option>
+        </select>
+        <br><br>
+
+        <hr>
+
+        <h3>Lado da Unidade Condensadora (Quente)</h3>
+
+        <label for="">Temperatura do ar da condensadora (°C):</label><br>
+        <input type="number" name="cond-temp-ar" id="cond-temp-ar" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Velocidade do ar da condensadora (m/s):</label><br>
+        <input type="number" name="cond-vel-ar" id="cond-vel-ar" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Temperatura do ar da condensadora 2 (°C) (Se não houver, pôr -1):</label><br>
+        <input type="number" name="cond-temp-ar-2" id="cond-temp-ar-2" required step="0.01" min="-1">
+        <br><br>
+
+        <label for="">Velocidade do ar da condensadora 2 (m/s)  (Se não houver, pôr -1):</label><br>
+        <input type="number" name="cond-vel-ar-2" id="cond-vel-ar-2" required step="0.01" min="-1">
+        <br><br>
+
+        <label for="">Pressão da linha de alta - Quente (Psi):</label><br>
+        <input type="number" name="cond-pressao-alta" id="cond-pressao-alta" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Pressão da linha de baixa - Frio (Psi):</label><br>
+        <input type="number" name="cond-pressao-baixa" id="cond-pressao-baixa" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Capacitância do capacitor (&mu;F):</label><br>
+        <input type="number" name="cond-capacitor" id="cond-capacitor" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Capacitância do capacitor 2 (&mu;F) (Se não houver, pôr -1):</label><br>
+        <input type="number" name="cond-capacitor-2" id="cond-capacitor-2" required step="0.01" min="-1">
+        <br><br>
+
+        <label for="">Corrente Elétrica do Compressor (A):</label><br>
+        <input type="number" name="cond-compressor-corrente" id="cond-compressor-corrente" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Tensão Elétrica do Compressor (V):</label><br>
+        <input type="number" name="cond-compressor-tensao" id="cond-compressor-tensao" required step="0.01" min="0">
+        <br><br>
+
+        <label for="">Limpeza do filtro secador:</label><br>
+        <select name="cond-filtro-sec" id="cond-filtro-sec" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Limpeza realizada">Limpeza realizada</option>
+        </select>
+        <br><br>
+
+        <label for="">Realização da lavagem:</label><br>
+        <select name="cond-lavagem-realizacao" id="cond-lavagem-realizacao" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="nao-feita">Não Feita</option>
+            <option value="feita">Feita</option>
+        </select>
+        <br><br>
+
+        <hr>
+        <label for="">Observações (quando houver):</label>
+        <input type="text" name="observacoes" id="observacoes"><br>
+
+        <hr>
+        
+        <button type="submit">Finalizar Inspeção</button>
+
+</form>
+</body>
+</html>

@@ -31,7 +31,7 @@
 
         <h4>Orientações</h4>
         <ul>
-            <li>Ligar o AC e pôr em 20 °C para a inspeção.</li>
+            <li>Ligar o AC e pôr em 23 °C para a inspeção.</li>
             <li>Nas inspeções, sempre que houver, fazer observações quanto à alguma anormalidade, correções realizadas, etc. </li>
         </ul>
         <hr>
@@ -79,6 +79,7 @@
 
         <h3>Lado da Unidade Evaporadora (Frio)</h3>
 
+        <!--
         <label for="">Velocidade do ar - lado esquerdo (m/s):</label><br>
         <input type="number" name="evap-vel-ar-esq" id="evap-vel-ar-esq" required step="0.01" min="0">
         <br><br>
@@ -94,6 +95,7 @@
         <label for="">Temperatura do ar - lado direito (°C):</label><br>
         <input type="number" name="evap-temp-ar-dir" id="evap-temp-ar-dir" required step="0.01" min="-20">
         <br><br>
+        -->
 
         <label for="">Limpeza da tela do filtro:</label><br>
         <select name="evap-filtro" id="evap-filtro" required>
@@ -122,8 +124,8 @@
         <label for="">Realização da lavagem:</label><br>
         <select name="evap-lavagem" id="evap-lavagem" required step="0.01" min="0">
             <option value="" disabled selected>Selecione uma opção</option>
-            <option value="nao-feita">Não Feita</option>
-            <option value="feita">Feita</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Limpeza realizada">Limpeza realizada</option>
         </select>
         <br><br>
 
@@ -131,6 +133,7 @@
 
         <h3>Lado da Unidade Condensadora (Quente)</h3>
 
+        <!--
         <label for="">Temperatura do ar da condensadora (°C):</label><br>
         <input type="number" name="cond-temp-ar" id="cond-temp-ar" required step="0.01" min="0">
         <br><br>
@@ -170,6 +173,7 @@
         <label for="">Tensão Elétrica do Compressor (V):</label><br>
         <input type="number" name="cond-compressor-tensao" id="cond-compressor-tensao" required step="0.01" min="0">
         <br><br>
+        -->
 
         <label for="">Limpeza do filtro secador:</label><br>
         <select name="cond-filtro-sec" id="cond-filtro-sec" required>
@@ -182,8 +186,8 @@
         <label for="">Realização da lavagem:</label><br>
         <select name="cond-lavagem-realizacao" id="cond-lavagem-realizacao" required>
             <option value="" disabled selected>Selecione uma opção</option>
-            <option value="nao-feita">Não Feita</option>
-            <option value="feita">Feita</option>
+            <option value="Em bom estado">Em bom estado</option>
+            <option value="Limpeza realizada">Limpeza realizada</option>
         </select>
         <br><br>
 

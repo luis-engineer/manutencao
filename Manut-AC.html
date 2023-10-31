@@ -6,7 +6,6 @@
     <title>manut-prev-ar-cond</title>
 </head>
 <body>
-    
 
     <p>
         <center>
@@ -40,6 +39,8 @@
         <select name="nome-inspetor" id="nome-inspetor" required>
             <option value="" disabled selected>Selecione uma opção</option>
             <option value="Jeferson">Jeferson</option>
+            <option value="Júnior">Júnior</option>
+            <option value="Everton">Everton</option>
         </select>
         <br><br>
 
@@ -75,6 +76,119 @@
         <br><br>
 
         <hr>
+
+        <h3>Plano Mensal</h3>
+
+        <table>
+
+            <tr>
+                <td></td>
+                <td style="writing-mode: vertical-lr">Feito</td>
+                <td style="writing-mode: vertical-lr">Fora de prazo</td>
+            </tr>
+
+            <tr>
+                <td>Limpar parte externa da unidade condensadora</td>
+                <td><input type="radio" id="m-limp-un-cond" value="feito" name="m-limp-un-cond" required></td>
+                <td><input type="radio" id="m-limp-un-cond" value="fora de prazo" name="m-limp-un-cond"></td>
+            </tr>
+
+            <tr>
+                <td>Limpar grade frontal</td>
+                <td><input type="radio" id="m-limp-grade-frontal" value="feito" name="m-limp-grade-frontal" required></td>
+                <td><input type="radio" id="m-limp-grade-frontal" value="fora de prazo" name="m-limp-grade-frontal"></td>
+            </tr>
+
+            <tr>
+                <td>Limpar filtros de ar</td>
+                <td><input type="radio" id="m-limp-tela-filtros" value="feito" name="m-limp-tela-filtros" required></td>
+                <td><input type="radio" id="m-limp-tela-filtros" value="fora de prazo" name="m-limp-tela-filtros"></td>
+            </tr>
+
+            <tr>
+                <td>Verificar controle remoto e operação do AC</td>
+                <td><input type="radio" id="m-controle-ac" value="feito" name="m-controle-ac" required></td>
+                <td><input type="radio" id="m-controle-ac" value="fora de prazo" name="m-controle-ac"></td>
+            </tr>
+            
+            <tr>
+                <td>Verificar drenagem da água</td>
+                <td><input type="radio" id="m-dreno" value="feito" name="m-dreno" required></td>
+                <td><input type="radio" id="m-dreno" value="fora de prazo" name="m-dreno"></td>
+            </tr>
+
+            <tr>
+                <td>Eliminar condensação no isolamento das tubullações</td>
+                <td><input type="radio" id="m-isolamento" value="feito" name="m-isolamento" required></td>
+                <td><input type="radio" id="m-isolamento" value="fora de prazo" name="m-isolamento"></td>
+            </tr>
+
+            <tr>
+                <td>Corrente elétrica de funcionamento (A)</td>
+                <td><input type="radio" id="m-corrente-e" value="feito" name="m-corrente-e" required></td>
+                <td><input type="radio" id="m-corrente-e" value="fora de prazo" name="m-corrente-e"></td>
+                <td><input type="number" name="m-corrente-e-v" id="m-corrente-e-v" step="0.01" min="0"></td>
+            </tr>
+
+            
+        </table>
+
+        <h3>Plano Trimestral</h3>
+
+        <table>
+
+            <tr>
+                <td></td>
+                <td style="writing-mode: vertical-lr">Feito</td>
+                <td style="writing-mode: vertical-lr">Fora de prazo</td>
+            </tr>
+
+            <tr>
+                <td>Executar itens do plano mensal</td>
+                <td><input type="radio" id="t-p-mensal" value="feito" name="t-p-mensal" required></td>
+                <td><input type="radio" id="t-p-mensal" value="fora de prazo" name="t-p-mensal"></td>
+            </tr>
+
+
+            <tr>
+                <td>Verificar e corrigir conexões elétricas</td>
+                <td><input type="radio" id="t-conex-elet" value="feito" name="t-conex-elet" required></td>
+                <td><input type="radio" id="t-conex-elet" value="fora de prazo" name="t-conex-elet"></td>
+            </tr>
+
+            <tr>
+                <td>Verificar e eliminar condensação no chassi</td>
+                <td><input type="radio" id="t-bandeja-dreno" value="feito" name="t-bandeja-dreno" required></td>
+                <td><input type="radio" id="t-bandeja-dreno" value="fora de prazo" name="t-bandeja-dreno"></td>
+            </tr>
+            
+            
+
+            <tr>
+                <td>Verificar dreno</td>
+                <td><input type="radio" id="m-dreno" value="feito" name="m-dreno" required></td>
+                <td><input type="radio" id="m-dreno" value="fora de prazo" name="m-dreno"></td>
+            </tr>
+
+            <tr>
+                <td>Eliminar condensação no isolamento das tubullações</td>
+                <td><input type="radio" id="m-isolamento" value="feito" name="m-isolamento" required></td>
+                <td><input type="radio" id="m-isolamento" value="fora de prazo" name="m-isolamento"></td>
+            </tr>
+
+            <tr>
+                <td>Corrente elétrica (A)</td>
+                <td><input type="radio" id="m-corrente-e" value="feito" name="m-corrente-e" required></td>
+                <td><input type="radio" id="m-corrente-e" value="fora de prazo" name="m-corrente-e"></td>
+                <td><input type="number" name="m-corrente-e-v" id="m-corrente-e-v" step="0.01" min="0"></td>
+            </tr>
+
+            
+        </table>
+
+
+
+        <!---->
 
         <h3>Lado da Unidade Evaporadora (Frio)</h3>
 

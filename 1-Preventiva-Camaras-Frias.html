@@ -140,9 +140,12 @@
             <hr>
             
             <h3>Lado da Unidade Evaporadora (Frio)</h3>
-            <p>Imagens de Referência</p>
+            
 
             <!--Inserir uma imagem-->
+            
+            <!--
+            <p>Imagens de Referência</p>
             <label for="">Limpa</label><br>
             <img src="Images/condensadora-limpo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Limpa" height="150">
             <img src="Images/condensadora-limpo-camaras-2.jpg" alt="Traseira(Ventilador) da Condensadora Limpa" height="150">
@@ -151,6 +154,7 @@
             <img src="Images/condensadora-sujo-camaras-1.jpg" alt="Frontal(Tela) da Condensadora Suja" height="150">
             <img src="Images/condensadora-sujo-camaras-2.jpg" alt="Traseira(Ventilador) da Condensadora Suja" height="150">
             <br><br>
+            -->
 
             <label for="">Velocidade do ar - ventilador esquerdo (m/s):</label><br>
             <input type="number" name="evap-vel-ar-esq" id="evap-vel-ar-esq" required step="0.01" min="0">
@@ -171,19 +175,12 @@
             <label for="">Limpeza do dreno:</label><br>
             <select name="evap-dreno" id="evap-dreno" required>
                 <option value="" disabled selected>Selecione uma opção</option>
-                <option value="Em bom estado">Em bom estado</option>
-                <option value="Correção realizada">Correção realizada</option>
-                <option value="Correção pendente">Correção pendente</option>
+                <option value="nao-feita">Não Feita</option>
+                <option value="feita">Feita</option>
             </select>
             <br><br>
 
-            <label for="">Estado e realização da lavagem:</label><br>
-            <select name="evap-lavagem-estado" id="evap-limpeza-estado" required step="0.01" min="0">
-                <option value="" disabled selected>Selecione uma opção</option>
-                <option value="pouco-sujo">Pouco sujo</option>
-                <option value="sujo">Sujo</option>
-                <option value="limpo">Limpo</option>
-            </select>
+            <label for="">Lavagem:</label><br>
             <select name="evap-lavagem-realizacao" id="evap-lavagem-realizacao" required step="0.01" min="0">
                 <option value="" disabled selected>Selecione uma opção</option>
                 <option value="nao-feita">Não Feita</option>

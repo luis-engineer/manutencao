@@ -39,7 +39,7 @@
             <label for="">Nome:</label>
             <select name="nome" id="nome" required>
                 <option value="" disabled selected>Selecione uma opção</option>
-                <option value="Wigeny">Adailson</option>
+                <option value="Adailson">Adailson</option>
                 <option value="Max">Max</option>
                 <option value="Everton">Everton</option>
                 <option value="Jeferson">Jeferson</option>
@@ -53,6 +53,11 @@
             <label for="">Data do chamado:</label>
             <input type="date" name="data-inspecao" id="data-inspecao" required>
             <br>
+
+            <label for="">Hora de atendimento do chamado:</label>
+            <input type="time" id="hora" name="hora" required>
+            <br>
+
             <label for="">Apartamento:</label>
             <input type="number" name="apartamento" id="apartamento" required>
             <br>
@@ -67,6 +72,16 @@
                 <tr>
                     <td>Porta Apto</td>
                     <td><input type="checkbox" id="porta-apto" value="resolvido" name="porta-apto"></td>
+                </tr>
+
+                <tr>
+                    <td>Porta do Banheiro</td>
+                    <td><input type="checkbox" id="porta-wc" value="resolvido" name="porta-wc"></td>
+                </tr>
+
+                <tr>
+                    <td>Porta da Varanda</td>
+                    <td><input type="checkbox" id="porta-varanda" value="resolvido" name="porta-varanda"></td>
                 </tr>
 
                 <tr>

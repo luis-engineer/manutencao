@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Manut.Prev.Aptos</title>
+</head>
+<body>
+
+        <p>
+            <center>
+                <!--Inserir uma imagem-->
+                <img src="Images/Logo-Thermas.png" alt="Logo Thermas" width="200">
+                <hr>
+                <!--Título de tamanho 1-->
+                <h1>Manutenção</h1>
+                <hr>
+                <h1>Formulário de Pintura</h1>
+                <h1>Apartamentos</h1>
+                <hr>
+            </center>
+        </p>
+
+        <!----> <!--como comentar-->
+        <!--Inserindo um link na página com a tag a de ancora-archor, com endereco e o texto a ser exibido -->
+        <a href="0-Manutencao-Thermas.html" target="_self">Voltar</a>
+
+        <h4>Orientações</h4>
+        <ul>
+            <li>Marcar quais itens foram alvos de pintura</li>
+        </ul>
+        <p></p>
+        <hr>
+
+        <form action="https://script.google.com/macros/s/AKfycby2SMZyX0RRDnBrLmlImsg-RlhaFCHlBLj8iPQCO62CPg3mWXE3XrrpXuf0wr-1SOY2wQ/exec" method="post" enctype="multipart/form-data">
+            
+            <h4>Identificação</h4>
+            <label for="">Nome:</label>
+            <select name="nome" id="nome" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Roberto">Roberto</option>
+                <option value="Evandro">Evandro</option>
+                <option value="Vinicius">Vinicius</option>
+            </select>
+            <br>
+            
+            <label for="">Data da pintura:</label>
+            <input type="date" name="data" id="data" required>
+            <br>
+
+            <label for="">Hora de início:</label>
+            <input type="time" id="hora-inicio" name="hora-inicio" required>
+            <br>
+
+            <label for="">Hora de conclusão:</label>
+            <input type="time" id="hora-termino" name="hora-termino" required>
+            <br>
+
+            <label for="">Apartamento:</label>
+            <input type="number" name="apartamento" id="apartamento" required>
+            <br>
+
+            <label for="">Apto Programado:</label>
+            <select name="programado" id="programado" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+            <br>
+            <hr> 
+
+            <table>
+
+                <tr>
+                    <td></td>
+                    <td style="writing-mode: vertical-lr">Item pintado</td>
+                </tr>
+
+                <tr>
+                    <td>Quarto total</td>
+                    <td><input type="checkbox" id="quarto-total" value="pintado" name="quarto-total"></td>
+                </tr>
+
+                <tr>
+                    <td>Quarto parede do Ar condicionado</td>
+                    <td><input type="checkbox" id="quarto-parede-ac" value="pintado" name="quarto-parede-ac"></td>
+                </tr>
+
+                <tr>
+                    <td>Quarto demais paredes</td>
+                    <td><input type="checkbox" id="quarto-parede-outras" value="pintado" name="quarto-parede-outras"></td>
+                </tr>
+
+                <tr>
+                    <td>Teto do quarto</td>
+                    <td><input type="checkbox" id="quarto-teto" value="pintado" name="quarto-teto"></td>
+                </tr>
+
+                <tr>
+                    <td>Hall do apto</td>
+                    <td><input type="checkbox" id="hall-apto" value="pintado" name="hall-apto"></td>
+                </tr>
+
+                <tr>
+                    <td>Teto do banheiro</td>
+                    <td><input type="checkbox" id="teto-wc" value="pintado" name="teto-wc"></td>
+                </tr>
+
+                <tr>
+                    <td>Porta Apto</td>
+                    <td><input type="checkbox" id="porta-apto" value="pintado" name="porta-apto"></td>
+                </tr>
+
+                <tr>
+                    <td>Porta do Banheiro</td>
+                    <td><input type="checkbox" id="porta-wc" value="pintado" name="porta-wc"></td>
+                </tr>
+
+                <tr>
+                    <td>Varanda</td>
+                    <td><input type="checkbox" id="varanda" value="pintado" name="varanda"></td>
+                </tr>
+ 
+            </table>
+            <hr>
+            <label for="">Outro:</label>
+            <input type="text" name="outro" id="outro"><br>
+            <hr>
+
+            <button type="submit">Finalizar Inspeção</button>
+
+    </form>
+</body>
+</html>
